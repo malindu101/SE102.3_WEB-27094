@@ -1,0 +1,136 @@
+1)
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arithmetic Operations</title>
+</head>
+<body>
+    <?php
+    $x=6;
+    $y=4;
+
+    $sum=$x+$y;
+    $dif=$x-$y;
+    $mul=$x*$y;
+    $divi=$x/$y;
+
+    echo "Sum is".$sum."<br>";
+    echo "Difference".$dif."<br>";
+    echo "multiplication".$mul."<br>";
+    echo "Division".$divi."<br>";
+
+
+
+    ?>
+</body>
+</html>
+
+2)
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arithmetic Operations</title>
+</head>
+<body>
+    <?php
+    for($i=5;$i<=15;$i++){
+        echo ("".$i);
+    }
+
+
+
+    ?>
+</body>
+</html>
+
+3)
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electricity Bill Calculator</title>
+</head>
+<body>
+    <form method="post">
+        <label for="units">Enter the number of units consumed:</label>
+        <input type="text" id="units" name="units">
+        <input type="submit" value="Calculate">
+    </form>
+
+    <?php
+    
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        
+        $units = $_POST["units"];
+
+        
+        if ($units <= 50) {
+            $billAmount = $units * 3.50;
+        } elseif ($units <= 100) {
+            $billAmount = 50 * 3.50 + ($units - 50) * 4.00;
+        } elseif ($units <= 150) {
+            $billAmount = 50 * 3.50 + 50 * 4.00 + ($units - 100) * 5.20;
+        } else {
+            $billAmount = 50 * 3.50 + 50 * 4.00 + 50 * 5.20 + ($units - 150) * 6.50;
+        }
+
+        
+        echo "Electricity Bill Amount: Rs. " . number_format($billAmount, 2);
+    }
+    ?>
+</body>
+</html>
+
+4)
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    <form method="post">
+        <label for="dayNumber">Enter a number from 1 to 7:</label>
+        <input type="number" id="dayNumber" name="dayNumber" min="1" max="7">
+        <input type="submit" value="Show Day">
+    </form>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $dayNumber = $_POST["dayNumber"];
+
+       
+        switch ($dayNumber) {
+            case 1:
+                $day = "Monday";
+                break;
+            case 2:
+                $day = "Tuesday";
+                break;
+            case 3:
+                $day = "Wednesday";
+                break;
+            case 4:
+                $day = "Thursday";
+                break;
+            case 5:
+                $day = "Friday";
+                break;
+            case 6:
+                $day = "Saturday";
+                break;
+            case 7:
+                $day = "Sunday";
+                break;
+            default:
+                $day = "Invalid number";
+        }
+
+        // Display the determined day
+        echo "Day of the Week: " . $day;
+    }
+    ?>
+</body>
+</html>
+
