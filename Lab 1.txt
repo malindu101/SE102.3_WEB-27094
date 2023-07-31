@@ -1,0 +1,68 @@
+1)
+<html>
+<head>
+<style>
+p{ text-align: center;
+}
+ table,th,td{border: 1px solid black;
+}
+</style>
+
+<p>student Records</p>
+</head>
+
+<body>
+	<table>
+    <tr>
+      <th>Student ID</th>
+      <th>Student Name</th>
+	<th>Degree</th>
+    </tr>
+    <tr>
+      <td>1002323</td>
+      <td>Nimesh Fernando</td>
+	<td>BSc in IT</td>
+
+    </tr>
+    <tr>
+      <td>1002424</td>
+      <td>Lasadun Bandara</td>
+	<td>BSc in Computer Science</td>
+    </tr>
+  </table>
+</body>
+
+</html>
+
+2)
+
+<html>
+<head> <title>project</title></head>
+    <body>
+    <h1>Programming Language</h1>
+    <ol type="" >
+         <li>C#</li> 
+         <li>Java</li> 
+         <li>Ruby</li> 
+        <li>Python</li> </ol>
+    </body>
+</html>
+
+
+3)
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form </title>
+</head>
+<body>
+    
+    <form>
+        <label>Name:</label><br>
+        <label>Index Number</label>
+        
+    </form>
+</body>
+</html>
+

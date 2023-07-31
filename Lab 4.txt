@@ -1,0 +1,43 @@
+<html>
+    <body>
+        <h2>Registarion Form</h2>
+        <form action="action_page.php">
+            <label for="fname">First Name</label>
+            
+            <input type="text" id="fname" name="fname" value=""><br>
+            <label for="Lname">Last Name</label>
+            <input type="text" id="Lname" name="Lname" value=""><br>
+            <label for="Mb">Mobile Number</label>
+            <input type="text" id ="Mb"name="mb" value="">
+            <p>Gender
+            <input type="radio" id="gen" name="gen" value="male">
+            <label for="gen">Male</label>
+            <input type="radio" id="gen" name="gen" value="Female">
+            <label for ="gen">Female</label><br></p>
+            <label for="email">E-mail</label>
+            <input type="text" id="mail"name="mail"value=""><br>
+            <label for ="Language">Language</label>
+            <select name ="Language" >
+              <option value="">select language</option>
+              <option value="">Tamil</option>
+              <option value="">sinhala</option>  
+            </select>
+            <p>Favourite Song
+            <input type="checkbox"id="fav"name="fav" value="pop"
+            <label for="gen">POP</label>
+            <input type="checkbox"id="fav"name="fav" value="pop"
+            <label for="gen">Rock</label>
+            <input type="checkbox"id="fav"name="fav" value="pop"
+            <label for="gen">Other</label></p>
+            <p><label>Additional details</label>
+                <textarea name="details" cols="30" rows="4"></textarea>
+            </p>
+            <input type="checkbox"id="agree"name="ag"value="ag">
+            <label>I agree</label><br>
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    <button onclick="displayMessageBox()">Button</button>
+
+    <script>
+        function displayMessageBox(){
+            alert("This is an alert");
+        }
+    </script>
+</body>
+</html>

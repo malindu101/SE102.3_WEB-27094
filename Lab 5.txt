@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <style>
+
+            body{
+                background-image:url("https://www.goalcast.com/wp-content/uploads/2021/06/Sunset-quotes.jpg?w=708");
+                background-size:cover;
+                background-repeat:no-repeat;
+            }
+            h1{
+                text-align:center; color:red;
+            }
+            p{text-align:center;font-size:100px;}
+        </style>
+
+        <h1>Quotes for Life</h1>
+
+        <p>You only live once,<br>but if you do it right.once is enough.</p>
+
+        
+    </body>
+</html>
