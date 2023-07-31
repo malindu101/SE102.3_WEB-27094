@@ -1,0 +1,72 @@
+1)
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Background Color Change</title>
+  <style>
+    
+  </style>
+</head>
+<body>
+    <button class="color-button" id="red">Red</button>
+    <button class="color-button" id="green">Green</button>
+    <button class="color-button" id="blue">Blue</button>
+    
+    <script src="new1.js"></script>
+  <script src="new1.js"></script>
+
+</body>
+</html>
+
+
+2)
+
+
+function changeToRed() {
+    document.body.style.backgroundColor = 'red';
+  }
+  
+  
+  function changeToGreen() {
+    document.body.style.backgroundColor = 'green';
+  }
+  
+  
+  function changeToBlue() {
+    document.body.style.backgroundColor = 'blue';
+  }
+  
+  
+  function resetColor() {
+    document.body.style.backgroundColor = '';
+  }
+  
+  
+  document.getElementById('red').addEventListener('mouseover', changeToRed);
+  document.getElementById('red').addEventListener('mouseout', resetColor);
+  
+  document.getElementById('green').addEventListener('mouseover', changeToGreen);
+  document.getElementById('green').addEventListener('mouseout', resetColor);
+  
+  document.getElementById('blue').addEventListener('mouseover', changeToBlue);
+  document.getElementById('blue').addEventListener('mouseout', resetColor);
+
+
+4)
+
+<html>
+    <body>
+        <script>
+            let a=prompt("Radius of the circle");
+            let b=a*a*22/7;
+            alert("Area is"+b);
+        </script>
+    </body>
+</html>
+  
+
+
+
+
+

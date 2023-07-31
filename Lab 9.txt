@@ -1,0 +1,62 @@
+1)
+<html>
+    <body>
+        <script>
+            let a=prompt("Enter 1-7");
+            let day;
+            const dayNumber = parseInt(a);
+            switch (dayNumber) {
+        case 1:
+          day = "Sunday";
+          break;
+        case 2:
+          day = "Monday";
+          break;
+        case 3:
+          day = "Tuesday";
+          break;
+        case 4:
+          day = "Wednesday";
+          break;
+        case 5:
+          day = "Thursday";
+          break;
+        case 6:
+          day = "Friday";
+          break;
+        case 7:
+          day = "Saturday";
+          break;
+        default:
+          day = "Invalid input";
+            }
+
+            alert(""+day);
+            
+        </script>
+    </body>
+</html>
+
+2)
+
+<html>
+    <body>
+        <button id="con">Google</button>
+        <script>
+            function click(){
+
+                let a = confirm("Do you want to go to google ");
+                if(a){
+                    window.location.href="https://www.google.com";
+                }
+                else{
+                    alert("You decided to stay");
+                }
+
+            }
+            document.getElementById('con').addEventListener('click',click);
+            
+        </script>
+    </body>
+</html>
+

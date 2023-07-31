@@ -1,0 +1,11 @@
+2)<html>
+    <body>
+        
+        <script>
+            let a=prompt("Enter NIC");
+            const b = a.substring(0, 4);
+            let c = 2023-b;
+            alert(""+c);
+        </script>
+    </body>
+</html>
